@@ -154,14 +154,14 @@ const _slideEnam = function () {
 
 
 new TypeIt("#teks1", {
-  strings: ["Hari ini, saya langitkan semua doa terbaik saya untuk kamu.", "Semoga hal-hal yang membuat kamu runtuh turut menjadi alasan kamu untuk tetap tumbuh.", "Semoga dunia senantiasa menjaga kamu dimanapun kamu berada.", "Semoga hari-hari kamu selalu diiringi cinta yang tak pernah ada batasnya." , "Semoga setiap langkahmu dimudahkan hingga tercapai apa yang kamu inginkan."],
+  strings: [ "Hari ini, kulangitkan semua doa terbaik untuk kamu semoga selalu ada ketenangan, kekuatan, dan kebahagiaan yang menyertai langkahmu setiap saat tanpa henti.", "Semoga hal-hal yang membuat kamu runtuh turut menjadi alasan kamu untuk tetap tumbuh karena dari sana kamu belajar banyak hal yang menjadikanmu jauh lebih kuat dari sebelumnya.", "Semoga dunia senantiasa menjaga kamu dimanapun kamu berada dengan segala cara yang tak pernah kamu sangka agar kamu tetap merasa aman dan tidak pernah sendiri.", "Semoga hari-hari kamu selalu diiringi cinta yang tak pernah ada batasnya yang hadir dalam wujud sederhana, tulus, dan selalu ada meskipun dalam keadaan apapun.", "Semoga setiap langkahmu dimudahkan hingga tercapai apa yang kamu inginkan meski jalannya panjang dan berliku tetap ada jalan terbuka yang membawamu pada semua harapanmu." ]
   startDelay: 4000,
   speed: 75,
   waitUntilVisible: true
 }).go();
 
 new TypeIt("#teks2", {
-  strings: ["Dengan ataupun tanpaku, semoga semesta selalu membahagiakan kamu bagimanapun caranya.", " ", "barakallah fi umrik, terima kasih sudah bertahan sampai sejauh ini.", " ", "- Wish all you the best"],
+strings: [ "Dengan ataupun tanpaku, semoga semesta selalu membahagiakan kamu bagaimanapun caranya, dalam setiap langkah kecil maupun besar, dalam setiap keputusan yang kamu ambil, dan dalam setiap keadaan yang mungkin tidak pernah kamu duga sebelumnya.", "Barakallah fi umrik, terima kasih sudah bertahan sampai sejauh ini dengan segala luka, segala tawa, segala jatuh bangun yang pernah kamu lalui, semoga umurmu senantiasa penuh keberkahan dan kebahagiaan yang tidak pernah terputus.", "Wish all you the best, semoga segala hal baik selalu mendatangi kamu tepat pada waktunya, semoga pintu rezeki terbuka luas, semoga mimpi-mimpimu satu per satu menjadi nyata, dan semoga setiap hari selalu ada alasan baru untuk kamu tersenyum." ]
   startDelay: 2000,
   speed: 75,
   waitUntilVisible: true
@@ -446,3 +446,4 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
