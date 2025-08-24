@@ -154,14 +154,13 @@ const _slideEnam = function () {
 
 
 new TypeIt("#teks1", {
-  strings: ["Hari ini, saya langitkan semua doa terbaik saya untuk kamu.", "Semoga hal-hal yang membuat kamu runtuh turut menjadi alasan kamu untuk tetap tumbuh.", "Semoga dunia senantiasa menjaga kamu dimanapun kamu berada.", "Semoga hari-hari kamu selalu diiringi cinta yang tak pernah ada batasnya." , "Semoga setiap langkahmu dimudahkan hingga tercapai apa yang kamu inginkan."],
-  startDelay: 4000,
+  strings: [ "Hari ini aku titip doa baik-baik buat kamu.", "Semoga hal-hal yang dulu bikin kamu jatuh, justru jadi alasan buat kamu tumbuh lebih kuat.", "Semoga semesta selalu jaga kamu di mana pun kamu ada.", "Semoga hari-hari kamu penuh hal-hal yang bikin kamu tenang dan bahagia.", "Dan semoga langkahmu selalu dimudahin sampai semua yang kamu pengen tercapai." ],
   speed: 75,
   waitUntilVisible: true
 }).go();
 
 new TypeIt("#teks2", {
-  strings: ["Dengan ataupun tanpaku, semoga semesta selalu membahagiakan kamu bagimanapun caranya.", " ", "barakallah fi umrik, terima kasih sudah bertahan sampai sejauh ini.", " ", "- Wish all you the best"],
+  strings: [ "Ada atau nggak aku di samping kamu, semoga semesta tetap bikin kamu bahagia dengan caranya sendiri.", "Barakallah fii umrik, makasih udah bertahan dan terus jalan sejauh ini.", "Aku doain yang terbaik, semoga tiap hari kamu selalu nemu alasan buat senyum.", "- Selamat ulang tahun, semoga semua yang kamu harapkan pelan-pelan kejadian." ],
   startDelay: 2000,
   speed: 75,
   waitUntilVisible: true
@@ -446,5 +445,6 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
