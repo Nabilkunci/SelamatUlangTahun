@@ -11,28 +11,28 @@ const content = document.getElementById('content');
 const footer = document.getElementsByTagName('footer')[0];
 const timer = document.getElementById('timer');
 
-const second = 1000,
-  minute = second * 60,
-  hour = minute * 60,
-  day = hour * 24;
-let countDown = new Date("Jan 29, 2025 00:00:00").getTime();
-  x = setInterval(function () {
-    let now = new Date().getTime(),
-      distance = countDown - now;
-    // document.getElementById('days').innerText = Math.floor(distance / (day)),
-    document.getElementById('hours').innerText = Math.floor(distance / (hour)),
-      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+  const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
-    if (distance < 0) {
+    // Target: 24 Agustus 2025, 16:58
+    let countDown = new Date("Aug 24, 2025 16:58:00").getTime();
 
-      timer.classList.add('d-none');
-      confetti();
-      clearInterval(x);
-      _slideSatu();
-    }
+    let x = setInterval(function () {
+      let now = new Date().getTime(),
+        distance = countDown - now;
 
-  }, second)
+      document.getElementById("days").innerText = Math.floor(distance / day);
+      document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+      document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+      document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "<h3>🎂 Happy Birthday! 🎂</h3>";
+      }
+    }, second);
 
 const _slideSatu = function () {
   const tap = document.getElementById('tap');
@@ -446,6 +446,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
